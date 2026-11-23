@@ -1153,6 +1153,16 @@ body.editando .navegacion { bottom: 96px; }
   .ficha-titulo { font-size: 1.4rem; }
 }
 
+/* computadoras con ventana muy baja (por ejemplo 1280 × 585): la portada no debe tocar la cabecera */
+@media (min-width: 961px) and (max-height: 700px) {
+  .portada-titulo { font-size: min(12.5vw, 16.5vh); }
+  .portada-contenido { bottom: calc(3.5vh + 26px); }
+  .portada-kanji { margin-bottom: .35em; }
+  .portada-regla { margin: 14px 0 12px; }
+  .portada-acciones { margin-top: 18px; }
+  .portada-integrantes { margin-top: 14px; }
+}
+
 @media (max-height: 560px) and (orientation: landscape) {
   .portada-titulo { font-size: clamp(3rem, 9vw, 5rem); }
   .portada-contenido { bottom: calc(5.5vh + 20px); }
