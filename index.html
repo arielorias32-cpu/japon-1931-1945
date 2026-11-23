@@ -864,6 +864,8 @@ button.marcador::before { content: ''; position: absolute; left: -12px; top: -12
 .creditos-biblio .lista-refs li { color: var(--papel-2); }
 .creditos-recursos { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; font-family: var(--sans); font-size: 13.5px; line-height: 1.45; color: var(--papel-2); }
 .creditos-recursos a { color: var(--papel); text-decoration: underline; text-decoration-color: var(--rojo-vivo); text-underline-offset: 3px; }
+.creditos-proceso { grid-column: 1 / -1; max-width: 760px; }
+.creditos-proceso p { font-size: .98rem; line-height: 1.6; }
 .creditos-recursos a:hover, .creditos-recursos a:focus-visible { color: #fff; }
 .btn-volver {
   display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 24px; margin-top: clamp(60px, 10vh, 100px);
@@ -1601,6 +1603,10 @@ body.editando .navegacion { bottom: 96px; }
               <li><a href="https://fonts.google.com/specimen/Anonymous+Pro" target="_blank" rel="noopener">Anonymous Pro</a>, tipografía de Mark Simonson (licencia SIL OFL 1.1). Se usa en las fechas, las etiquetas y los botones.</li>
               <li><a href="https://github.com/notofonts/noto-cjk" target="_blank" rel="noopener">Noto Serif CJK JP</a>, tipografía de Google (licencia SIL OFL 1.1). Se usa en los caracteres japoneses de cada escena.</li>
             </ul>
+          </div>
+          <div class="creditos-col creditos-proceso">
+            <h3 class="sub">Cómo se hizo</h3>
+            <p>Empezamos a trabajar en esta infografía una semana antes de la entrega. Primero leímos el libro y escogimos las fechas, los datos y las citas de cada escena. La página se hizo con HTML, CSS y JavaScript, y la fuimos probando en computadora y en celular. Con cada prueba corregimos textos, ajustamos animaciones y sonidos, y cambiamos lo que no se entendía bien.</p>
           </div>
         </div>
         <button type="button" class="btn-volver" data-ir="0">
